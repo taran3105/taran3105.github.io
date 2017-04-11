@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>BookStore</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header class="navbar" id="top" role="banner">
+		<div class="container">
+			<div class="navbar-header pull-left">
+				<a href="./main.html" class="navbar-brand">BOOKSTORE</a>
+			</div>
+			<nav role="navigation">
+				<ul class="nav navbar-nav navbar-right pull-right">
+					<li><a class="login" href="login.html">Login</a></li>
+					<li class="mr-one"><a href="register.html">Register</a></li>
+					<li class="mr-one"><a href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span>MyCart</a></li>
+					
+					<li class="hidden-xs"><a href="#">Help</a></li>
+					<li class="cursor-shape"><a data-toggle="modal" data-target="#feedbackModal">FeedBack</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<div id="fakeTop"></div>
+
+	<div class="container" id="main">
+		<div class="row header">
+			<div class="col-md-7 ptb-one clearfix" id="title">
+				<img class="pull-left" src="images/logo.png" height="50" alt="logo">
+				<h1 class="title pull-left">BookStore</h1>
+			</div>
+			<div class="search col-md-5 ptb-one mt-12 clearfix">
+				<div class="col-lg-10 pull-right">
+					<div class="input-group col-sm-10">
+						<input type="text" class="form-control" placeholder="Title,Author">
+						<span class="input-group-btn">
+							<button class="btn btn-primary" type="button">Search For</button>
+						</span>
+					</div>
+					<!-- /input-group -->
+				</div>
+				<!-- /.col-lg-6 -->
+			</div>	
+		</div>
+
+		<div class="row content">
+			<div class="col-md-3 hidden-print hidden-xs hidden-sm" id="page-left">
+				<ul class="nav col-lg-11" id="menu">
+					<li><a href="#" class="title">Book Classification</a></li>
+					<li><a href="#">Literature</a>
+						<ul class="nav">
+							<li><a href="./classify.html">Fiction</a></li>
+							<li><a href="#">Essay</a></li>
+							<li><a href="#">Prose</a></li>
+							<li><a href="#">Poetry</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Popular</a>
+						<ul class="nav">
+							<li><a href="#">Comics</a></li>
+							<li><a href="#">Picture Book</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Culture</a>
+						<ul class="nav">
+							<li><a href="#">History</a></li>
+							<li><a href="#">Philosophy</a></li>
+							<li><a href="#">Biography</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Life</a>
+						<ul class="nav">
+							<li><a href="#">Travel</a></li>
+							<li><a href="#">Inspirational</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Management</a>
+						<ul class="nav">
+							<li><a href="#">Economics</a></li>
+							<li><a href="#">Management</a></li>
+							<li><a href="#">Finance</a></li>
+							<li><a href="#">Business</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Technology</a>
+						<ul class="nav">
+							<li><a href="#">Popular</a></li>
+							<li><a href="#">Internet</a></li>
+							<li><a href="#">Programming</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#fakeTop" title="Back to UP"><span class="glyphicon glyphicon-arrow-up"></span> Back to Top</a>
+					</li>
+				</ul>
+			</div>
+
+			<!-- /#page-left -->
+			<div class="col-md-9" id="page-right">
+				<div id="bulletin" class="carousel slide" data-ride="carousel" data-interval="4000">
+					<ol class="carousel-indicators">
+						<li data-target="#bulletin" data-slide-to="0" class="active"></li>
+						<li data-target="#bulletin" data-slide-to="1" class=""></li>
+						<li data-target="#bulletin" data-slide-to="2" class=""></li>
+						<li data-target="#bulletin" data-slide-to="3" class=""></li>
+					</ol>
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<a href="#"><img alt="First slide" src="images/f2.png">
+								<div class="carousel-caption"><h5>Board title 1</h5></div>
+							</a>
+						</div>
+						<div class="item">
+							<a href="#"><img alt="First slide" src="images/f3.png">
+								<div class="carousel-caption"><h5>Board Title 2</h5></div>
+							</a>
+						</div>
+						<div class="item">
+							<a href="#"><img alt="First slide" src="images/f4.png">
+								<div class="carousel-caption"><h5>Board Title 3</h5></div>
+							</a>
+						</div>
+						<div class="item">
+							<a href="#"><img alt="First slide" src="images/d1.png">
+								<div class="carousel-caption"><h5>Board Title4</h5></div>
+							</a>
+						</div>
+					</div>
+					<!-- /carousel-inner -->
+					<a class="left carousel-control" href="#bulletin" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#bulletin" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+				<!-- /.carousel -->
+				<div class="panel panel-home mt-two">
+					<div class="panel-heading title">Top Books<a class="more pull-right">More</a></div>
+					<div class="panel-body">
+						<div class="item col-xs-6 col-sm-4 col-md-4 col-lg-3">
+							<div class="thumbnail">
+								<a href="./item.html" target="_blank"><img src="./itemPhoto/m1.png" alt="book"></a>
+								<div class="caption">
+									<div class="price">
+										<span>Rs</span>
+										<strong>100.0</strong>
+									</div>
+									<p class="title">
+										<a href="./item.html" target="_blank">
+										Think and Grow Rich</br>
+										</a>
+									</p>
+								</div>
+							</div>
+						</div>
+						<!-- /item -->
+						<div class="item col-xs-6 col-sm-4 col-md-4 col-lg-3">
+							<div class="thumbnail">
+								<a href="./item.html" target="_blank"><img src="./itemPhoto/m2.png" alt="Rich Dad Poor Dad"></a>
+								<div class="caption">
+									<div class="price">
+										<span>Rs</span>
+										<strong>350.0</strong>
+									</div>
+									<p class="title">
+										<a href="./item.html" target="_blank">
+										Rich Dad</br>Poor Dad
+										</a>
+									</p>
+								</div>
+							</div>
+						</div>
+						<!-- /item -->
+						<div class="item col-xs-6 col-sm-4 col-md-4 col-lg-3">
+							<div class="thumbnail">
+								<a href="./item.html" target="_blank"><img src="./itemPhoto/s1.png" alt="Harry Potter"></a>
+								<div class="caption">
+									<div class="price">
+										<span>Rs</span>
+										<strong>400.0</strong>
+									</div>
+									<p class="title">
+										<a href="./item.html" target="_blank">
+										Harry Potter</br>And The Cursed Child
+										</a>
+									</p>
+								</div>
+							</div>
+						</div>
+						<!-- /item -->
+					</div>
+					<!-- /.panel-body -->
+				</div>
+				<!-- /.panel,top books -->
+				<div class="panel panel-home mt-two">
+					<div class="panel-heading title"><i class="glyphicon glyphicon-fire"></i> TRENDING<a class="more pull-right">MORE</a></div>
+					<div class="panel-body">
+						<div class="item col-xs-6 col-sm-4 col-md-4 col-lg-3">
+							<div class="thumbnail">
+								<a href="./item.html" target="_blank"><img src="./itemPhoto/t1.png" alt="T1"></a>
+								<div class="caption">
+									<div class="price">
+										<span>Rs</span>
+										<strong>140.0</strong>
+									</div>
+									<p class="title">
+										<a href="./item.html" target="_blank">The Girl who</br>Knew too much</a>
+									</p>
+								</div>
+							</div>
+						</div>
+						<!-- /item -->
+						<div class="item col-xs-6 col-sm-4 col-md-4 col-lg-3">
+							<div class="thumbnail">
+								<a href="./item.html" target="_blank"><img src="./itemPhoto/t2.png" alt="T2"></a>
+								<div class="caption">
+									<div class="price">
+										<span>Rs</span>
+										<strong>240.0</strong>
+									</div>
+									<p class="title">
+										<a href="./item.html" target="_blank">Dark</br>Matter</a>
+									</p>
+								</div>
+							</div>
+						</div>
+						<!-- /item -->
+						<div class="item col-xs-6 col-sm-4 col-md-4 col-lg-3">
+							<div class="thumbnail">
+								<a href="./item.html" target="_blank"><img src="./itemPhoto/t3.png" alt="T3"></a>
+								<div class="caption">
+									<div class="price">
+										<span>Rs</span>
+										<strong>350.0</strong>
+									</div>
+									<p class="title">
+										<a href="./item.html" target="_blank">Dracula</br></a>
+									</p>
+								</div>
+							</div>
+						</div>
+						<!-- /item -->
+					</div>
+					<!-- /.panel-body -->
+				</div>
+				<!-- /.panel，trending -->
+			</div>
+			<!-- /#page-right -->
+		</div>
+	</div>
+
+	<footer>
+		<div class="page-bottom clearfix">
+			<div class="col-sm-2">
+			</div>
+			<div class="copyright col-sm-8">
+				<!-- <img class="pull-left" src="images/title.png" height="59" width="40" alt="title"> -->
+				<p>Copyright © Taran All Rights Reserved</p>
+			</div>
+			<div class="col-sm-2"></div>
+		</div>
+		<!-- /row -->
+	</footer>
+
+	<!-- Modal -->
+	<div class="modal fade" id="feedbackModal" tabindex="-1" role="dialog" aria-labelledby="feedbackModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="feedbackModalLabel">FeedBack</h4>
+	      </div>
+	      <div class="modal-body clearfix">
+	      	<div class="col-xs-12 form-horizontal">
+	      		<div class="form-group">
+					<div class="col-xs-3 pull-left text-right left-title">
+						Title：
+					</div>
+					<div class="col-xs-4">
+						<input type="text" id="username" placeholder="" class="form-control">
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-xs-3 pull-left text-right left-title">
+						Types Of：
+					</div>
+					<div class="col-xs-4 right-content">
+						<label class="radio-inline">
+							<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked> Recommend
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Complaint
+						</label>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-xs-3 pull-left text-right left-title">
+						Content：
+					</div>
+					<div class="col-xs-8">
+						<textarea class="form-control"></textarea>
+					</div>
+				</div>
+	      	</div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+	        <button type="button" class="btn btn-primary">Submit</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

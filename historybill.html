@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>BOOKSTORE</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header class="navbar" id="top" role="banner">
+		<div class="container">
+			<div class="navbar-header pull-left">
+				<a href="./main.html" class="navbar-brand">BOOKSTORE</a>
+			</div>
+			<nav role="navigation">
+				<ul class="nav navbar-nav navbar-right pull-right">
+					<li><a class="login" href="login.html">Login</a></li>
+					<li class="mr-one"><a href="register.html">Register</a></li>
+					<li class="mr-one"><a href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+					<li class="hidden-xs"><a href="help.html">Help</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<div id="fakeTop"></div>
+
+	<div class="container" id="main">
+		<div class="row header">
+			<div class="col-md-7 ptb-one clearfix" id="title">
+				<img class="pull-left" src="images/logo.png" height="50" alt="logo">
+				<h1 class="title pull-left">BOOKSTORE</h1>
+			</div>
+			<div class="search col-md-5 ptb-one mt-12 clearfix">
+				<div class="col-lg-10 pull-right">
+					<div class="input-group col-sm-10">
+						<input type="text" class="form-control" placeholder="Title,Author">
+						<span class="input-group-btn">
+							<button class="btn btn-primary" type="button">Search</button>
+						</span>
+					</div>
+					<!-- /input-group -->
+				</div>
+				<!-- /.col-lg-6 -->
+			</div>	
+		</div>
+		<!-- /row header -->
+		<div class="row content">
+		    <div class="col-xs-12">
+		    	<div id="cart" class="mt-one clearfix">
+		    	    <div class="thead">
+		    	    	<div class="item clearfix">
+		    	        	<span class="col-sm-4">Product Information</span>
+		    	        	<span class="col-sm-2 text-center">Unit Price</span>
+		    	        	<span class="col-sm-2">Quantity</span>
+		    	        	<span class="col-sm-1">Discount</span>
+		    	        	<span class="col-sm-2 hidden-xs">Money</span>
+		    	        	<span class="col-sm-1 hidden-xs">Operation</span>
+		    	    	</div>
+		    	  	</div>
+		    	</div>
+
+		    	<div id="cart" class="mt-one clearfix">
+		        	<div class="thead">
+		        		<div class="item clearfix">
+		            		<span class="col-sm-2 pull-left">2017-04-9</span>
+		            		<span class="col-sm-3">Order No：1288740803922362</span>
+		            		<span class="col-sm-7 text-right"><a href="#" class="glyphicon glyphicon-trash"></a></span>
+		        		</div>
+		      		</div>
+		      		<!-- <div class="col-xs-12 text-center">
+				        	<p class="empty-prompt"><strong>Your cart is empty.</strong></p>
+				        </div> -->
+		      		<div class="tbody">
+		        		<div class="item clearfix">
+		          			<div class="col-sm-4 info">
+		            			<div class="p-img">
+		              				<a href="./item.html">
+		                			<img src="./images/f2.png" class="itempic J_ItemImg">
+		              				</a>
+		            			</div>
+			            		<div class="p-name">
+			              			<a href="./item.html">The Time Machine</a>
+			            		</div>
+		          			</div>
+			          		<div class="col-sm-2 p-price">
+			            		<span>Rs400.00</span>
+			          		</div>
+			          		<div class="col-sm-2 p-num">
+			            		<input type="number" class="form-control" maxlength="8" value="1">
+			          		</div>
+			          		<div class="col-sm-1 text-center">
+			          			<span>0%</span>
+			          		</div>
+				          	<div class="col-sm-2 hidden-xs p-sum price  text-center">
+				            	<span>Rs</span>
+				            	<strong>400.00</strong>
+				          	</div>
+				          	<div class="col-sm-1 hidden-xs p-action">
+				            	<a href="#">Comment</a>
+				          	</div>
+		        		</div>
+		        		<!-- /.item -->
+
+				        <div class="item clearfix">
+				          	<div class="col-sm-4 info">
+				            	<div class="p-img">
+				              		<a href="./item.html">
+				                		<img src="./images/f3.png" class="itempic J_ItemImg">
+				              		</a>
+				            	</div>
+				            	<div class="p-name">
+				              		<a href="./item.html">Tale Of Two Cities</a>
+				            	</div>
+				          	</div>
+				          	<div class="col-sm-2 p-price">
+				            	<span>Rs350.00</span>
+				          	</div>
+				          	<div class="col-sm-2 p-num">
+				            	<input type="number" class="form-control" maxlength="8" value="1">
+				          	</div>
+				          	<div class="col-sm-1 text-center">
+			          			<span>0%</span>
+			          		</div>
+				          	<div class="col-sm-2 hidden-xs p-sum price  text-center">
+				            	<span>Rs</span>
+				            	<strong>350.00</strong>
+				          	</div>
+				          	<div class="col-sm-1 hidden-xs p-action">
+				            	<a href="#">Comment</a>
+				          	</div>
+				        </div>
+				        <!-- /.item -->
+
+				        <div class="item clearfix">
+				          	<div class="col-sm-4 info">
+				            	<div class="p-img">
+				              		<a href="./item.html">
+				                		<img src="./images/f4.png" class="itempic J_ItemImg">
+				              		</a>
+				            	</div>
+				            	<div class="p-name">
+				              		<a href="./item.html">The War Of the Worlds</a>
+				            	</div>
+				          	</div>
+				          	<div class="col-sm-2 p-price">
+				            	<span>Rs550.00</span>
+				          	</div>
+				          	<div class="col-sm-2 p-num">
+				            	<input type="number" class="form-control" maxlength="8" value="1">
+				          	</div>
+				          	<div class="col-sm-1 text-center">
+			          			<span>0%</span>
+			          		</div>
+				          	<div class="col-sm-2 hidden-xs p-sum price  text-center">
+				            	<span>Rs</span>
+				            	<strong>550.00</strong>
+				          	</div>
+				          	<div class="col-sm-1 hidden-xs p-action">
+				            	<a href="#">Comment</a>
+				          	</div>
+				        </div>
+				        <!-- /.item -->
+		      		</div>
+		      		<!-- /.tbody -->
+		    	</div>
+		    	<!-- /#cart -->
+
+		   
+		  	</div>
+		</div>
+		<!-- /row content -->
+	</div>
+
+	<footer>
+		<div class="page-bottom clearfix">
+			<div class="col-sm-2">
+			</div>
+			<div class="copyright col-sm-8">
+				<!-- <img class="pull-left" src="images/title.png" height="59" width="40" alt="title"> -->
+				<p>Copyright © Taran All Rights Reserved</p>
+			</div>
+			<div class="col-sm-2"></div>
+		</div>
+		<!-- /row -->
+	</footer>
+</body>
+</html>

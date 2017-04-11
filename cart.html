@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>BOOKSTORE</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header class="navbar" id="top" role="banner">
+		<div class="container">
+			<div class="navbar-header pull-left">
+				<a href="./main.html" class="navbar-brand">BOOKSTORE</a>
+			</div>
+			<nav role="navigation">
+				<ul class="nav navbar-nav navbar-right pull-right">
+					<li><a class="login" href="login.html">Login</a></li>
+					<li class="mr-one"><a href="register.html">Register</a></li>
+					<li class="mr-one"><a href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span> My Cart</a></li>
+					<li class="hidden-xs"><a href="help.html">Feedback</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<div id="fakeTop"></div>
+
+	<div class="container" id="main">
+		<div class="row header">
+			<div class="col-md-7 ptb-one clearfix" id="title">
+				<img class="pull-left" src="images/logo.png" height="50" alt="logo">
+				<h1 class="title pull-left">BOOKSTORE</h1>
+			</div>
+			<div class="search col-md-5 ptb-one mt-12 clearfix">
+				<div class="col-lg-10 pull-right">
+					<div class="input-group col-sm-10">
+						<input type="text" class="form-control" placeholder="Title,Author">
+						<span class="input-group-btn">
+							<button class="btn btn-primary" type="button">Search</button>
+						</span>
+					</div>
+					<!-- /input-group -->
+				</div>
+				<!-- /.col-lg-6 -->
+			</div>	
+		</div>
+		<!-- /row header -->
+		<div class="row content">
+		    <div class="col-xs-12">
+		    	<div id="cart" class="mt-one clearfix">
+		        	<div class="thead">
+		        		<div class="item clearfix">
+		            		<span class="col-sm-4">Product Information</span>
+		            		<span class="col-sm-2 text-center">Unit Price(Rupees)</span>
+		            		<span class="col-sm-2">Quantity</span>
+		            		<span class="col-sm-1">Discount</span>
+		            		<span class="col-sm-2 hidden-xs">Amount</span>
+		            		<span class="col-sm-1 hidden-xs">Operations</span>
+		        		</div>
+		      		</div>
+		      		<!-- <div class="col-xs-12 text-center">
+				        	<p class="empty-prompt"><strong>Your cart is empty.</strong></p>
+				        </div> -->
+		      		<div class="tbody">
+		        		<div class="item clearfix">
+		          			<div class="col-sm-4 info">
+		            			<div class="p-img">
+		              				<a href="./item.html">
+		                			<img src="./itemPhoto/t1.png" class="itempic J_ItemImg">
+		              				</a>
+		            			</div>
+			            		<div class="p-name">
+			              			<a href="./item.html">The Girl Who Knew Too Much</a>
+			            		</div>
+		          			</div>
+			          		<div class="col-sm-2 p-price">
+			            		<span>Rs140.00</span>
+			          		</div>
+			          		<div class="col-sm-2 p-num">
+			            		<input type="number" class="form-control" maxlength="8" value="1">
+			          		</div>
+			          		<div class="col-sm-1 text-center">
+			          			<span>10% Off</span>
+			          		</div>
+				          	<div class="col-sm-2 hidden-xs p-sum price  text-center">
+				            	<span>Rs</span>
+				            	<strong>126.00</strong>
+				          	</div>
+				          	<div class="col-sm-1 hidden-xs p-action">
+				            	<a href="#">Delete</a>
+				          	</div>
+		        		</div>
+		        		<!-- /.item -->
+
+				        <div class="item clearfix">
+				          	<div class="col-sm-4 info">
+				            	<div class="p-img">
+				              		<a href="./item.html">
+				                		<img src="./itemPhoto/t2.png" class="itempic J_ItemImg">
+				              		</a>
+				            	</div>
+				            	<div class="p-name">
+				              		<a href="./item.html">Dark Matter</a>
+				            	</div>
+				          	</div>
+				          	<div class="col-sm-2 p-price">
+				            	<span>Rs240.00</span>
+				          	</div>
+				          	<div class="col-sm-2 p-num">
+				            	<input type="number" class="form-control" maxlength="8" value="1">
+				          	</div>
+				          	<div class="col-sm-1 text-center">
+			          			<span>10% off</span>
+			          		</div>
+				          	<div class="col-sm-2 hidden-xs p-sum price  text-center">
+				            	<span>Rs</span>
+				            	<strong>216.00</strong>
+				          	</div>
+				          	<div class="col-sm-1 hidden-xs p-action">
+				            	<a href="#">Delete</a>
+				          	</div>
+				        </div>
+				        <!-- /.item -->
+
+				        <div class="item clearfix">
+				          	<div class="col-sm-4 info">
+				            	<div class="p-img">
+				              		<a href="./item.html">
+				                		<img src="./itemPhoto/t3.png" class="itempic J_ItemImg">
+				              		</a>
+				            	</div>
+				            	<div class="p-name">
+				              		<a href="./item.html">Dracula</a>
+				            	</div>
+				          	</div>
+				          	<div class="col-sm-2 p-price">
+				            	<span>Rs350.00</span>
+				          	</div>
+				          	<div class="col-sm-2 p-num">
+				            	<input type="number" class="form-control" maxlength="8" value="1">
+				          	</div>
+				          	<div class="col-sm-1 text-center">
+			          			<span>5% off</span>
+			          		</div>
+				          	<div class="col-sm-2 hidden-xs p-sum price  text-center">
+				            	<span>Rs</span>
+				            	<strong>317.00</strong>
+				          	</div>
+				          	<div class="col-sm-1 hidden-xs p-action">
+				            	<a href="#">Delete</a>
+				          	</div>
+				        </div>
+				        <!-- /.item -->
+		      		</div>
+		      		<!-- /.tbody -->
+
+			      	<div class="cart-total clearfix">
+			        	<div class="pull-right">
+			            	<a class="btn btn-lg btn-danger" href="settlement.html">
+			            Checkout<b class="glyphicon glyphicon-chevron-right"></b>
+			            	</a>
+			        	</div>
+			        	<div class="total pull-right">
+			            Total(Excluding Shipping)
+			            	<strong class="price" id="finalPrice" data-bind="1753.00">Rs659</strong>
+			        	</div>
+			    	</div>
+
+
+		    	</div>
+		    	<!-- /#cart -->
+		  	</div>
+		</div>
+		<!-- /row content -->
+	</div>
+
+	<footer>
+		<div class="page-bottom clearfix">
+			<div class="col-sm-2">
+			</div>
+			<div class="copyright col-sm-8">
+				<!-- <img class="pull-left" src="images/title.png" height="59" width="40" alt="title"> -->
+				<p>Copyright © Taran All Rights Reserved</p>
+			</div>
+			<div class="col-sm-2"></div>
+		</div>
+		<!-- /row -->
+	</footer>
+</body>
+</html>

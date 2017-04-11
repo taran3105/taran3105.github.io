@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>BOOKSTORE</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body class="back body-register">
+	<div class="container" id="main">
+		<div class="login-header row">
+			<div class="col-md-4 ptb-one clearfix header-height" id="title">
+				<img class="pull-left" src="images/logo.png" height="50" alt="logo">
+				<h1 class="title pull-left">BOOKSTORE</h1>
+			</div>
+			<div class="col-md-4 header-height clearfix">
+				<h3 class="welcome-reg">Edit Info</h3>
+			</div>
+		</div>
+		<!-- /login-header -->
+		<div class="row">
+			<div class="col-xs-12 form-horizontal">
+				<div class="col-xs-2"></div>
+				<div class="col-xs-8" id="register-frame">
+					<div class="form-group">
+						<div class="col-xs-3 pull-left text-right left-title">
+							Username
+						</div>
+						<div class="col-xs-4">
+							<input type="text" id="username" placeholder="Username" class="form-control">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-xs-3 pull-left text-right left-title">
+							Paasword：
+						</div>
+						<div class="col-xs-4">
+							<input type="password" id="password" placeholder="Password" class="form-control">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-xs-3 pull-left text-right left-title">
+							Confirm Password：
+						</div>
+						<div class="col-xs-4">
+							<input type="password" id="password" placeholder="Paasword" class="form-control">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-xs-3 pull-left text-right left-title">
+							Number：
+						</div>
+						<div class="col-xs-4">
+							<input type="text" id="phoneNumber" placeholder="000" class="form-control">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-xs-3 pull-left text-right left-title">
+							Gender：
+						</div>
+						<div class="col-xs-4 right-content">
+							<label class="radio-inline">
+								<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked> FeMale
+							</label>
+							<label class="radio-inline">
+								<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Male
+							</label>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-xs-3 pull-left text-right left-title">
+							Age：
+						</div>
+						<div class="col-xs-4">
+							<input type="text" id="age" placeholder="00" class="form-control">
+						</div>
+					</div>
+				
+					
+					<div class="form-group">
+						<div class="col-xs-3 pull-left text-right left-title">
+							Email:
+						</div>
+						<div class="col-xs-4">
+							<input type="text" id="email" placeholder="example@example.com" class="form-control">
+						</div>
+					</div>
+					
+					</div>
+					<div class="form-group">
+						<div class="col-xs-3 pull-left text-right left-title">
+							Address：
+						</div>
+						<div class="col-xs-2">
+							<input type="hidden" id="pre_province" value="state">
+							<input type="hidden" id="pre_city" value="city">
+							<input type="hidden" id="pre_district" value="district">
+							<select class="form-control" id="province-sel">
+							</select>
+						</div>
+						<div class="col-xs-2">
+							<select class="form-control" id="city-sel">
+							</select>
+						</div>
+						<div class="col-xs-2">
+							<select class="form-control" id="district-sel">
+							</select>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-xs-offset-3 col-xs-8">
+							<input type="text" id="address" placeholder="More INfo ABout Address" class="form-control">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-xs-3 pull-left text-right left-title">
+							Verification Code：
+						</div>
+						<div class="col-xs-2">
+							<input typse="text" id="identify" placeholder="Code" class="form-control">
+						</div>
+						<!-- <div class="col-xs-12">
+						<input class="test-underline form-control"></input>
+					</div> -->
+					<div class="col-xs-2">
+						<img src="./images/identify.png" alt="">
+					</div>
+					
+				</div>
+				<div class="form-group">
+					<div class="col-xs-3"></div>
+					<div class="col-xs-4">
+						<a class="btn btn-primary btn-block" id="btn-register" data-toggle="modal" data-target="#promptModal">Sign Up</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /.row -->
+</div>
+<!-- /#main -->
+
+<!-- Modal -->
+	<div class="modal fade" id="promptModal" tabindex="-1" role="dialog" aria-labelledby="promptModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="promptModalLabel">Alert</h4>
+	      </div>
+	      <div class="modal-body clearfix">
+	      	<div class="col-xs-12 left-title">
+	      		Failed
+	      	</div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-primary">Ok</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+<footer>
+	<div class="copyright">
+		<p>Copyright © TARAN All Rights Reserved</p>
+	</div>
+</footer>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script src="js/city.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>BOOKSTORE</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div class="login-header">
+			<div class="col-md-7 ptb-one clearfix header-height" id="title">
+				<img class="pull-left" src="images/logo.png" height="50" alt="logo">
+				<h1 class="title pull-left">BOOKSTORE</h1>
+			</div>
+		</div>
+	</header>
+	
+	<div class="row">
+		<div class="parent col-xs-12">
+			<div id="left-text" class="col-sm-7">
+				<p>Books are uniquely portable magic</p>
+				<p class="text-right">By Stephen King</p>
+			</div>
+			<div id="login-frame" class="col-sm-3">
+				<form action="#" class="form-horizontal">
+					<frameset>
+						<legend>Welcome<a href="#" class="pull-right a-register">Sign UP</a></legend>
+						<div class="form-group">
+							<div class="col-xs-12">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+									<input type="text" id="username" name="user.username" placeholder="Username" class="form-control">
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-xs-12">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+									<input type="password" id="password" name="user.password" placeholder="Password" class="form-control">
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-xs-12">
+								<div class="checkbox col-xs-6">
+									<label>
+									<input type="checkbox">Remember Password
+									</label>
+								</div>
+								<div class="col-xs-6">
+									<a href="#" class="pull-right a-forget" data-toggle="modal" data-target="#loginModal">Forgot Password?</a>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-xs-12">
+								<a href="main.html" class="btn btn-primary btn-block letter-spacing">Log IN</a>
+							</div>
+						</div>
+					</frameset>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<footer>
+		<div class="copyright">
+			<p>Copyright © TARAN All Rights Reserved</p>
+		</div>
+	</footer>
+
+	<!-- Modal -->
+	<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="loginModalLabel">Info</h4>
+	      </div>
+	      <div class="modal-body">
+                 <div class="row">
+                  <div class="col-xs-2">
+                    <div id="msgPicture"><span class='pull-right glyphicon glyphicon-ok-sign'></span></div>
+                  </div>
+                  <div class="col-xs-10">
+                   	 <div id="msgWord"><h4 class='title'>Mail has sent to your Registered Email</h4></div>
+                  </div>
+                </div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-primary" data-dismiss="modal">Ok</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

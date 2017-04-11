@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>BOOKSTORE</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header class="navbar" id="top" role="banner">
+		<div class="container">
+			<div class="navbar-header pull-left">
+				<a href="./main.html" class="navbar-brand">BOOKSTORE</a>
+			</div>
+			<nav role="navigation">
+				<ul class="nav navbar-nav navbar-right pull-right">
+					<li><a class="login" href="login.html">Login</a></li>
+					<li class="mr-one"><a href="register.html">Register</a></li>
+					<li class="mr-one"><a href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span> My Cart</a></li>
+					<li class="hidden-xs"><a href="help.html">Help</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<div id="fakeTop"></div>
+
+	<div class="container" id="main">
+		<div class="row header">
+			<div class="col-md-3 ptb-one clearfix" id="title">
+				<img class="pull-left" src="images/logo.png" height="50" alt="logo">
+				<h1 class="title pull-left">BOOKSTORE</h1>
+			</div>
+			<div class="col-md-3">
+				<h3 class="welcome-reg">Fiction</h3>
+			</div>
+			<div class="search col-md-5 ptb-one mt-12 clearfix">
+				<div class="col-lg-10 pull-right">
+					<div class="input-group col-sm-10">
+						<input type="text" class="form-control" placeholder="Title,Author">
+						<span class="input-group-btn">
+							<button class="btn btn-primary" type="button">Search</button>
+						</span>
+					</div>
+					<!-- /input-group -->
+				</div>
+				<!-- /.col-lg-6 -->
+			</div>	
+		</div>
+		<!-- /row header -->
+		
+		<div class="book-list col-xs-12">
+			<div class="col-xs-4 clearfix">
+				<div class="clearfix gray-bottom pb-two">
+					<div class="col-xs-1 visible-xs"></div>
+					<div class="col-sm-5 col-xs-10">
+						<div class="c-img">
+							<a href="./item.html">
+								<img src="./images/f2.png" class="itempic J_ItemImg">
+							</a>
+						</div>
+					</div>
+					<!-- /.col-sm-5.col-xs-10 -->
+					<div id="itemInfo" class="col-sm-7 col-xs-12">
+						<div class="title">
+							<p>
+								<a href="./item.html" class="a-title">The Time Machine</a>
+							</p>
+						</div>
+						<!-- /.title -->
+						<div>
+							<p class="p-content">Literature Publishing House</p>
+							<p class="c-price"><strong>Rs600</strong></p>
+							<div class="clearfix">
+								<span class="raty" data-score="4.5" readonly></span>
+								<span class="spacing"> </span>
+								<span>4.5</span>
+							</div>
+						</div>
+						<!-- /.params -->
+					</div>
+					<!-- /itemInfo -->
+				</div>
+				<!-- /.clearfix -->
+			</div>
+			<!-- /col-xs-4 clearfix -->
+			<div class="col-xs-4 clearfix">
+				<div class="clearfix gray-bottom pb-two">
+					<div class="col-xs-1 visible-xs"></div>
+					<div class="col-sm-5 col-xs-10">
+						<div class="c-img">
+							<a href="./item.html">
+								<img src="./images/f3.png" class="itempic J_ItemImg">
+							</a>
+						</div>
+					</div>
+					<!-- /.col-sm-5.col-xs-10 -->
+					<div id="itemInfo" class="col-sm-7 col-xs-12">
+						<div class="title">
+							<p>
+								<a href="./item.html" class="a-title">Tale Of Two Cities</a>
+							</p>
+						</div>
+						<!-- /.title -->
+						<div>
+							<p class="p-content">CHarles Dickens</p>
+							<p class="c-price"><strong>Rs450</strong></p>
+							<div class="clearfix">
+								<span class="raty" data-score="4.6" readonly></span>
+								<span class="spacing"> </span>
+								<span>4.6</span>
+							</div>
+						</div>
+						<!-- /.params -->
+					</div>
+					<!-- /itemInfo -->
+				</div>
+				<!-- /.clearfix -->
+			</div>
+			<!-- /col-xs-4 clearfix -->
+			<div class="col-xs-4 clearfix">
+				<div class="clearfix gray-bottom pb-two">
+					<div class="col-xs-1 visible-xs"></div>
+					<div class="col-sm-5 col-xs-10">
+						<div class="c-img">
+							<a href="./item.html">
+								<img src="./images/f4.png" class="itempic J_ItemImg">
+							</a>
+						</div>
+					</div>
+					<!-- /.col-sm-5.col-xs-10 -->
+					<div id="itemInfo" class="col-sm-7 col-xs-12">
+						<div class="title">
+							<p>
+								<a href="./item.html" class="a-title">The War Of the Worlds</a>
+							</p>
+						</div>
+						<!-- /.title -->
+						<div>
+							<p class="p-content">H.G. Wells</p>
+							<p class="c-price"><strong>Rs700.00</strong></p>
+							<div class="clearfix">
+								<span class="raty" data-score="4.0" readonly></span>
+								<span class="spacing"> </span>
+								<span>4.0</span>
+							</div>
+						</div>
+						<!-- /.params -->
+					</div>
+					<!-- /itemInfo -->
+				</div>
+				<!-- /.clearfix -->
+			</div>
+			<!-- /col-xs-4 clearfix -->
+			
+		</div>
+	</div>
+
+	<footer>
+		<div class=" clearfix">
+			<div class="col-sm-2">
+			</div>
+			<div class="copyright col-sm-8">
+				<p>Copyright © TARAN All Rights Reserved</p>
+			</div>
+			<div class="col-sm-2"></div>
+		</div>
+		<!-- /row -->
+	</footer>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.raty.js"></script>
+	<!-- // <script src="js/main.js"></script> -->
+
+	<script>
+		$('.raty').raty({
+			score: function() {
+				return $(this).attr('data-score');
+			},
+			readOnly: function() {
+				return $(this).attr('readonly') === 'readonly';
+			},
+			half: true,
+			starOff: './images/star-off.png',
+			starOn: './images/star-on.png',
+			starHalf: './images/star-half.png'
+		});
+
+	</script>
+</body>
+</html>
